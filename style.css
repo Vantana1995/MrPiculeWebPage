@@ -1,0 +1,327 @@
+body {
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+  max-width: 100%; /* Ensures the body does not exceed 100% of the viewport width */
+  z-index: -1; /* Sets the stacking order of the background image */
+  background-color: rgb(52, 133, 79); /* Sets the background color */
+}
+
+/* Styles for the header section */
+header {
+  width: 100%; /* Sets the header width to 100% */
+  top: 0; /* Positions the header at the top */
+  padding: 2px 2px; /* Adds padding inside the header */
+  position: relative; /* Sets the header position relative to its normal position */
+  text-align: center; /* Centers the text inside the header */
+  font-family: "Spicy Rice", serif; /* Sets the font family for the header */
+  font-weight: 400; /* Sets the font weight */
+  font-style: normal; /* Sets the font style */
+  color: rgb(0, 0, 0); /* Sets the text color */
+  font-size: 33px; /* Sets the font size */
+  z-index: 1000; /* Sets the stacking order of the header */
+  background-image: url("images/header.png"); /* Adds the new background image */
+  background-size: 1919px 356px; /* Sets the size of the background image */
+  background-repeat: no-repeat; /* Ensures the background image does not repeat */
+}
+
+/* Styles for the main content section */
+.content {
+  display: flex; /* Displays the content as a flex container */
+  flex-direction: column; /* Arranges flex items vertically */
+  align-items: flex-start; /* Aligns items to the start of the cross axis */
+  max-width: 100%; /* Sets the maximum width of the content */
+}
+/* Styles for the .buy-token section */
+.buy-token {
+  position: relative; /* Sets the position of the section */
+  margin: 20px 0; /* Adds space around the section */
+  text-align: center; /* Centers the content horizontally */
+  top: 20px; /* Positions the section from the top */
+  right: 20px; /* Positions the section from the right */
+  z-index: 1000; /* Sets the stacking order */
+  margin-top: 100;
+}
+/* Styles for links inside .buy-token section */
+.buy-token a {
+  display: inline-block; /* Displays the link as a block element */
+  background-color: #ff007a; /* Sets background color for the link */
+  color: rgb(0, 0, 0); /* Sets text color */
+  padding: 10px 20px; /* Adds padding inside the link */
+  font-size: 22px; /* Sets font size */
+  font-weight: 1000; /* Sets font weight */
+  border-radius: 5px; /* Adds rounded corners */
+  text-decoration: none; /* Removes underline from the link */
+  box-shadow: 0px 0px 5px rgb(0, 0, 0); /* Adds a shadow effect */
+  transition: background-color 0.3s; /* Adds transition effect */
+}
+.buy-token a:hover {
+  background-color: #e6006f; /* Changes background color on hover */
+}
+
+.buy-token img {
+  width: auto; /* Sets width of the icon */
+  height: auto; /* Maintains aspect ratio of the icon */
+  margin-right: 5px; /* Adds space between the icon and text */
+  vertical-align: middle; /* Aligns the icon vertically in the middle */
+}
+
+/* Styles for the token-wrapper section */
+.token-wrapper {
+  display: flex; /* Displays the token wrapper as a flex container */
+  justify-content: center; /* Arranges flex items vertically */
+  align-items: flex-start; /* Aligns items to the start of the cross axis */
+  width: 100%; /* Sets the width of the token wrapper to 100% */
+}
+
+/* Styles for token holders and token price sections */
+#tokenHolders,
+#tokenPrice {
+  display: flex; /* Displays token holders and token price as flex containers */
+  flex-direction: column; /* Arranges items vertically */
+  align-items: center; /* Centers items horizontally */
+  width: 100%; /* Sets width to 100% */
+  margin: 0 auto; /* Centers sections horizontally */
+  max-width: 600px; /* Sets maximum width */
+}
+
+/* Styles for .token-box */
+.token-box {
+  flex: 1; /* Allows box to grow and shrink */
+  padding: 20px; /* Adds padding inside the box */
+  background-color: #55a7aa; /* Sets background color */
+  box-sizing: border-box; /* Includes padding and border in total width and height */
+  margin: 10px 0; /* Adds margin around the box */
+  border-radius: 15px; /* Adds rounded corners */
+  box-shadow: inset 0px 0px 10px rgb(0, 0, 0); /* Adds inset shadow effect */
+}
+/* Styles for paragraphs inside .token-box */
+.token-box p {
+  margin: 0; /* Removes margin from paragraphs */
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .token-wrapper {
+    flex-direction: column; /* Changes flex direction to column for mobile devices */
+    align-items: center; /* Centers items for mobile devices */
+  }
+
+  #tokenHolders,
+  #tokenPrice {
+    width: 100%; /* Sets the width of token holders and token price to 100% for mobile devices */
+  }
+
+  .token-box {
+    margin: 10px; /* Sets smaller margin for token boxes on mobile devices */
+  }
+
+  #tokenHolders img,
+  #tokenPrice img {
+    flex: 0 1 auto; /* Sets flex properties for images */
+    height: auto; /* Sets automatic height for images */
+    width: 50px; /* Sets specific width for images on mobile devices */
+    margin-left: 10px; /* Sets left margin for images */
+  }
+}
+
+/* Styles for token holder and token price images */
+#tokenHolders img,
+#tokenPrice img {
+  flex: 0 1 auto; /* Sets flex properties for images */
+  height: auto; /* Sets height of images */
+  max-width: 100%; /* Sets width of images */
+  margin-left: 20%; /* Sets left margin for images */
+  margin-right: 20%; /* Sets right margin for images */
+}
+/* Styles for project details section */
+#projectDetails {
+  text-align: center; /* Centers text in project details section */
+}
+
+/* Styles for details section */
+#details {
+  margin-left: 55px; /* Sets left margin for details section */
+  margin-right: 55px; /* Sets right margin for details section */
+}
+
+/* Styles for details heading */
+#details h3 {
+  font-family: "Arial", sans-serif; /* Sets font family for details heading */
+  font-size: 18px; /* Sets font size for details heading */
+  line-height: 1.3; /* Sets line height for details heading */
+  text-align: center; /* Centers text in details heading */
+}
+#tokenHolders h3,
+#tokenPrice h3 {
+  font-size: 40px;
+}
+
+/* Styles for contacts section */
+.contacts {
+  position: relative; /* Sets position relative for contacts section */
+  display: inline-block; /* Displays contacts as inline-block */
+  margin-left: auto; /* Sets left margin for contacts section */
+  margin-right: 20px; /* Sets right margin for contacts section */
+  width: 200px; /* Sets width for contacts section */
+}
+.contacts input[type="checkbox"] {
+  position: absolute; /* Sets position of checkbox */
+  opacity: 0; /* Makes checkbox invisible */
+  pointer-events: none; /* Prevents interaction with checkbox */
+}
+/* Styles for .dropdown-content when checkbox is checked */
+.contacts input[type="checkbox"]:checked ~ .dropdown-content {
+  display: block; /* Displays dropdown content */
+}
+
+/* Styles for contacts label */
+.contacts label {
+  background-color: #adac55; /* Sets background color for contacts label */
+  color: rgb(0, 0, 0); /* Sets text color for contacts label */
+  padding: 10px; /* Adds padding inside contacts label */
+  font-size: 16px; /* Sets font size for contacts label */
+  border: none; /* Removes border from contacts label */
+  cursor: pointer; /* Sets cursor type for contacts label */
+  border-radius: 5px; /* Sets border radius for contacts label */
+  display: inline-block; /* Displays contacts label as inline-block */
+  box-shadow: 0px 0px 10px rgb(99, 97, 97); /* Adds shadow effect to contacts label */
+}
+
+/* Styles for dropdown content */
+.contacts .dropdown-content {
+  display: none; /* Hides dropdown content */
+  position: absolute; /* Sets position absolute for dropdown content */
+  background-color: #adac55; /* Sets background color for dropdown content */
+  min-width: 120px; /* Sets minimum width for dropdown content */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Adds shadow effect to dropdown content */
+  z-index: 1; /* Sets stacking order of dropdown content */
+  border-radius: 5px; /* Sets border radius for dropdown content */
+}
+
+/* Styles for dropdown content list */
+.contacts .dropdown-content ul {
+  list-style-type: none; /* Removes default list style */
+  padding: 0; /* Removes padding from dropdown content list */
+  margin: 0; /* Removes margin from dropdown content list */
+}
+
+/* Styles for dropdown content list items */
+.contacts .dropdown-content li {
+  padding: auto; /* Sets padding for dropdown content list items */
+}
+
+/* Styles for dropdown content links */
+.contacts .dropdown-content li a {
+  display: flex; /* Displays dropdown content links as flex */
+  align-items: flex-start; /* Aligns items to the start of the cross axis */
+  padding: 10px; /* Adds padding around dropdown content links */
+  color: #000; /* Sets text color of dropdown content links */
+  text-decoration: none; /* Removes underline from dropdown content links */
+}
+
+/* Styles for dropdown content link images */
+.contacts .dropdown-content li a img {
+  width: 20px; /* Sets width of dropdown content link images */
+  height: auto; /* Sets automatic height for dropdown content link images */
+  margin-right: 10px; /* Sets right margin for dropdown content link images */
+}
+
+/* Hover styles for dropdown content links */
+.contacts .dropdown-content li a:hover {
+  background-color: #918f49; /* Sets background color on hover for dropdown content links */
+}
+
+/* Styles for dropdown content links */
+.contacts .dropdown-content a {
+  color: black; /* Sets text color of dropdown content links */
+  padding: 12px 16px; /* Adds padding around dropdown content links */
+  text-decoration: none; /* Removes underline from dropdown content links */
+  display: block; /* Displays dropdown content links as block elements */
+  border-radius: 5px; /* Sets border radius for dropdown content links */
+}
+.contacts .dropdown-content a:hover {
+  background-color: #ddd; /* Changes background color of dropdown links on hover */
+}
+
+.contacts:hover .dropdown-content {
+  display: block; /* Displays dropdown content when hovering over .contacts */
+}
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  .contacts {
+    position: relative; /* Sets position to relative */
+    display: inline-block; /* Displays as inline block */
+    margin-left: auto; /* Aligns to right */
+    margin-right: 20px; /* Adds right margin */
+    width: 200px; /* Sets width to 200px */
+  }
+
+  /* Styles for label inside .contacts */
+  .contacts label {
+    background-color: #adac55; /* Sets background color */
+    color: rgb(0, 0, 0); /* Sets text color */
+    padding: 10px; /* Adds padding */
+    font-size: 16px; /* Sets font size */
+    border: none; /* Removes border */
+    cursor: pointer; /* Changes cursor to pointer */
+    border-radius: 5px; /* Adds rounded corners */
+    display: inline-block; /* Displays as inline block */
+    box-shadow: 0px 0px 10px rgb(99, 97, 97); /* Adds shadow effect */
+  }
+
+  /* Styles for .dropdown-content inside .contacts */
+  .contacts .dropdown-content {
+    display: none; /* Hides dropdown content */
+    position: absolute; /* Sets position to absolute */
+    background-color: #adac55; /* Sets background color */
+    min-width: 120px; /* Sets minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    z-index: 1; /* Sets stacking order */
+    border-radius: 5px; /* Adds rounded corners */
+  }
+
+  /* Styles for ul inside .dropdown-content */
+  .contacts .dropdown-content ul {
+    list-style-type: none; /* Removes list bullet */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+  }
+
+  /* Styles for li inside .dropdown-content */
+  .contacts .dropdown-content li {
+    padding: auto; /* Adds padding */
+  }
+
+  /* Styles for links inside li in .dropdown-content */
+  .contacts .dropdown-content li a {
+    display: flex; /* Displays as flex */
+    align-items: flex-start; /* Aligns items to start */
+    padding: 10px; /* Adds padding */
+    color: #000; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+  }
+
+  /* Styles for hover effect on links inside .dropdown-content */
+  .contacts .dropdown-content li a:hover {
+    background-color: #918f49; /* Sets background color on hover */
+  }
+
+  /* Additional styles for links inside .dropdown-content */
+  .contacts .dropdown-content a {
+    color: black; /* Sets text color */
+    padding: 12px 16px; /* Adds padding */
+    text-decoration: none; /* Removes underline */
+    display: block; /* Displays as block */
+    border-radius: 5px; /* Adds rounded corners */
+  }
+
+  /* Styles for hover effect on links inside .dropdown-content */
+  .contacts .dropdown-content a:hover {
+    background-color: #ddd; /* Sets background color on hover */
+  }
+
+  /* Styles for .dropdown-content when .contacts is focused within */
+  .contacts:focus-within .dropdown-content {
+    display: block; /* Displays dropdown content */
+  }
+}
